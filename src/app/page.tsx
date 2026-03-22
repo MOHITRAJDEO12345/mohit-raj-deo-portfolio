@@ -112,11 +112,10 @@ export default function Home() {
 
       {/* Quick Stats Bar */}
       <section className="w-full border-y border-white/10 bg-white/5 backdrop-blur-sm py-8 relative z-10 mt-[15vh]">
-        <div className="container mx-auto px-6 grid grid-cols-2 lg:grid-cols-5 gap-8 text-center divide-white/10 lg:divide-x interactive">
+        <div className="container mx-auto px-6 grid grid-cols-2 lg:grid-cols-4 gap-8 text-center divide-white/10 lg:divide-x interactive">
           {[
             { value: "~40%", label: "Latency Reduction Achieved" },
             { value: "~60%", label: "Cloud Cost Savings" },
-            { value: "500+", label: "Concurrent Streams" },
             { value: "9.09", label: "CGPA" },
             { value: "1", label: "Published Patent" },
           ].map((stat, idx) => (

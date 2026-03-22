@@ -72,8 +72,32 @@ export function BackgroundElements({ variant = "default" }: { variant?: "default
 
   return (
     <div className="fixed inset-0 overflow-hidden pointer-events-none -z-10">
-      <div className="absolute inset-0 grid-overlay opacity-30" />
-      {getOrbs()}
+        {/* Grid Overlay */}
+        <div 
+          className="absolute inset-0 grid-overlay opacity-30" 
+          style={{ WebkitMaskImage: "radial-gradient(circle at center, black 0%, transparent 80%)", maskImage: "radial-gradient(circle at center, black 0%, transparent 80%)" }}
+        ></div>
+
+        {/* 3D Wireframe Artistic Element */}
+        <div className="absolute top-[20%] right-[15%] w-96 h-96 pointer-events-none opacity-20 hidden md:block" style={{ perspective: "1000px" }}>
+          <motion.div
+            className="w-full h-full relative"
+            style={{ transformStyle: "preserve-3d" }}
+            animate={{ rotateX: [0, 360], rotateY: [0, 360] }}
+            transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
+          >
+            {[...Array(6)].map((_, i) => (
+              <div
+                key={i}
+                className="absolute inset-0 border border-accent-cyan/40 rounded-full"
+                style={{ transform: `rotateY(${i * 30}deg) rotateX(${i * 15}deg)` }}
+              />
+            ))}
+          </motion.div>
+        </div>
+
+        {/* Ambient Gradient Orbs */}
+        {getOrbs()}
     </div>
   );
 }
