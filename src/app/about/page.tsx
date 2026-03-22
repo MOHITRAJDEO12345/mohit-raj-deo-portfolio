@@ -61,8 +61,8 @@ export default function About() {
                 <div className="aspect-[3/4] bg-space-800 flex items-center justify-center relative">
                   <div className="absolute inset-0 scanline opacity-30"></div>
                   <span className="font-mono text-white/20 rotate-90 scale-150 absolute right-4 tracking-widest leading-none select-none">M R D</span>
-                  {/* Note: Provide actual image in public folder and replace this div with:
-                  <img src="/avatar.jpg" alt="Mohit Raj Deo" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" /> */}
+                 
+                  <img src="/avatar.jpeg" alt="Mohit Raj Deo" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" />
                   <div className="w-full h-full bg-gradient-to-b from-space-800 to-space-900 border-4 border-space-900 m-2 flex items-center justify-center relative z-10">
                     <span className="text-white/20 font-mono text-sm [writing-mode:vertical-rl]">{"// SYS_ADMIN_PROFILE"}</span>
                   </div>
