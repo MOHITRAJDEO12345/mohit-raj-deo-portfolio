@@ -146,7 +146,7 @@ export default function Home() {
           <GlassCard className="w-full h-full p-2 border-accent-cyan/30 rounded-full overflow-hidden relative group" hoverEffect>
             <div className="absolute inset-0 bg-accent-cyan/5 group-hover:bg-accent-cyan/10 transition-colors z-10 pointer-events-none" />
             <img
-              src="public/avatar.jpeg"
+              src="/avatar.jpeg"
               alt="Mohit Raj Deo"
               className="w-full h-full object-cover grayscale brightness-90 contrast-110 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-700"
             />
