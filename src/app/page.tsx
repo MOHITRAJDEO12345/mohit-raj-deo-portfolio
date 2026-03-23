@@ -146,7 +146,7 @@ export default function Home() {
           <GlassCard className="w-full h-full p-2 border-accent-cyan/30 rounded-full overflow-hidden relative group" hoverEffect>
             <div className="absolute inset-0 bg-accent-cyan/5 group-hover:bg-accent-cyan/10 transition-colors z-10 pointer-events-none" />
             <img
-              src="/mohit_portrait_placeholder_1774198219800.png"
+              src="public/avatar.jpeg"
               alt="Mohit Raj Deo"
               className="w-full h-full object-cover grayscale brightness-90 contrast-110 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-700"
             />
@@ -589,21 +589,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Floating Side Nav */}
-      <div className="fixed right-10 top-1/2 -translate-y-1/2 hidden xl:flex flex-col gap-8 z-50">
-        {['hero', 'about', 'experience', 'projects', 'skills', 'certifications'].map((id) => (
-          <a
-            key={id}
-            href={`#${id === 'hero' ? '' : id}`}
-            className="group relative flex items-center justify-end"
-          >
-            <span className="absolute right-8 text-[10px] font-mono text-white/0 group-hover:text-accent-cyan transition-all uppercase tracking-[0.2em]">
-               {id}
-            </span>
-            <div className="w-1.5 h-1.5 rounded-full bg-white/20 group-hover:bg-accent-cyan transition-colors" />
-          </a>
-        ))}
-      </div>
+
     </div>
   );
 }
